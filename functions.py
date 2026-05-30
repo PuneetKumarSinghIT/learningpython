@@ -46,6 +46,7 @@ print(f"Exponent: {exponent}")
 
 # types of funcitons arguments.
 def func(a, b, c=3, *args, **kwargs):
+    """Print the values of positional, default, extra positional, and keyword arguments."""
     print(f"a: {a}")
     print(f"b: {b}")
     print(f"c: {c}")
@@ -90,16 +91,16 @@ def factorial(n):
         return n * factorial(n-1)
 print(factorial(5))
 
-# Variables scope as local and global variables.
+# Variable scope: local and global variables.
 x = 10 # global variable
 print(f"Global variable x: {x}")
-def func():
-    global x # global variable
+def modify_global_x():
+    
+    global x  # declare that x refers to the global variable
     x = 100
-    y = 20 # local variable
+    y = 20  # local variable
     print(f"Inside the function: x = {x}, y = {y}")
-    print(f"Inside the function: x = {x}, y = {y}") 
-func()
+modify_global_x()
 print(f"Outside the function: x = {x}")
 
 # function as a parameter of another function.
