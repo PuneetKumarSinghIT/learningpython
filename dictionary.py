@@ -13,3 +13,6 @@ groceries['eggs'] = 50
 print(f"Groceries after adding eggs: {groceries}")
 groceries['milk'] = 65
 print(f"Groceries after updating milk price: {groceries}")
+print(f"Keys in groceries: {groceries.keys()}")
+print(f"Values in groceries: {groceries.values()}")
+print(f"Items in groceries: {groceries.items()}")
