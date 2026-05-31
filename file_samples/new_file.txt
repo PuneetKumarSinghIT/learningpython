@@ -1,0 +1,6 @@
+File is overwritten with new content.
+This is a new file created for learning file handling in Python.
+We are learning File handling in Python.
+
+This is an appended line.
+a mode is used to append the content of file and new content start from end of the file.
